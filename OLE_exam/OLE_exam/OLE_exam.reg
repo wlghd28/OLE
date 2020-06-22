@@ -1,0 +1,27 @@
+﻿REGEDIT
+; .REG 파일은 SETUP 프로그램에 사용될 수 있습니다.
+;   SETUP 프로그램을 사용할 수 없는 경우 아래 항목이
+;   CWinApp::RegisterShellFileTypes 및 COleObjectFactory::UpdateRegistryAll을
+;   호출하여 InitInstance에 자동으로 등록됩니다.
+
+
+HKEY_CLASSES_ROOT\OLEexam.Document = OLE_exam.Document
+
+
+HKEY_CLASSES_ROOT\OLEexam.Document\protocol\StdFileEditing\server = OLE_exam.EXE
+HKEY_CLASSES_ROOT\OLEexam.Document\protocol\StdFileEditing\verb\0 = &Edit
+HKEY_CLASSES_ROOT\OLEexam.Document\Insertable =
+HKEY_CLASSES_ROOT\OLEexam.Document\CLSID = {7ebfe870-c1bb-4bf8-878e-d7e7b4a16bba}
+
+HKEY_CLASSES_ROOT\CLSID\{7ebfe870-c1bb-4bf8-878e-d7e7b4a16bba} = OLE_exam.Document
+HKEY_CLASSES_ROOT\CLSID\{7ebfe870-c1bb-4bf8-878e-d7e7b4a16bba}\DefaultIcon = OLE_exam.EXE,1
+HKEY_CLASSES_ROOT\CLSID\{7ebfe870-c1bb-4bf8-878e-d7e7b4a16bba}\LocalServer32 = OLE_exam.EXE
+HKEY_CLASSES_ROOT\CLSID\{7ebfe870-c1bb-4bf8-878e-d7e7b4a16bba}\ProgId = OLEexam.Document
+HKEY_CLASSES_ROOT\CLSID\{7ebfe870-c1bb-4bf8-878e-d7e7b4a16bba}\MiscStatus = 32
+HKEY_CLASSES_ROOT\CLSID\{7ebfe870-c1bb-4bf8-878e-d7e7b4a16bba}\AuxUserType\3 = OLE_exam
+HKEY_CLASSES_ROOT\CLSID\{7ebfe870-c1bb-4bf8-878e-d7e7b4a16bba}\AuxUserType\2 = OLE_exam
+HKEY_CLASSES_ROOT\CLSID\{7ebfe870-c1bb-4bf8-878e-d7e7b4a16bba}\Insertable =
+HKEY_CLASSES_ROOT\CLSID\{7ebfe870-c1bb-4bf8-878e-d7e7b4a16bba}\verb\1 = &Open,0,2
+HKEY_CLASSES_ROOT\CLSID\{7ebfe870-c1bb-4bf8-878e-d7e7b4a16bba}\verb\0 = &Edit,0,2
+HKEY_CLASSES_ROOT\CLSID\{7ebfe870-c1bb-4bf8-878e-d7e7b4a16bba}\InprocHandler32 = ole32.dll
+
